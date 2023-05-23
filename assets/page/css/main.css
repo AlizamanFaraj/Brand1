@@ -1,0 +1,170 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  margin: auto;
+  max-width: 1440px;
+}
+
+.contact {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 1440px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .brandwrite {
+  color: rgb(0, 162, 255);
+  font-size: 40px;
+}
+nav a {
+  display: flex;
+  justify-content: space-between;
+}
+nav .brands > h1 {
+  color: rgb(48, 75, 75);
+  font-size: 32px;
+}
+nav .myBottom {
+  transform: rotateZ(90deg);
+  margin-left: 10px;
+}
+nav .btn_and_list > ul {
+  font-size: 20px;
+  transition: 2s;
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+nav .mybtn {
+  display: none;
+}
+nav #links #about {
+  position: relative;
+}
+nav #about > a {
+  padding-bottom: 20px;
+  margin-top: 23px;
+}
+nav .one_list_in_ul {
+  width: 200px;
+  border-top: 4px solid rgb(48, 75, 75);
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+nav .one_list_in_ul > li:hover,
+nav .two_list_in_ul > li:hover {
+  background-color: rgb(184, 175, 175);
+}
+nav .two_list_in_ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  border-top: 4px solid rgb(48, 75, 75);
+  left: 200px;
+  top: 65px;
+  background-color: white;
+}
+nav .btn {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  nav li.links:hover .two_list_in_ul {
+    display: block;
+  }
+  nav li.about:hover .one_list_in_ul {
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  nav nav {
+    justify-content: space-around;
+  }
+  nav .btn_and_list {
+    display: none;
+    position: relative;
+  }
+  nav .btn {
+    display: block;
+  }
+  nav .btn_and_list > button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 32px;
+  }
+  nav .mybtn {
+    display: block;
+  }
+  nav .mybtn > button {
+    border: 0;
+    background: 0;
+    font-size: 40px;
+    color: rgb(0, 81, 255);
+  }
+  nav a {
+    padding: 10px;
+    font-size: 24px;
+  }
+  nav .displayClass {
+    display: block;
+    width: 80%;
+    height: 100px;
+    position: fixed;
+    right: 0;
+    background-color: white;
+  }
+  nav .displayClass > ul {
+    display: block;
+    width: 80%;
+    height: auto;
+    height: auto;
+  }
+  nav .displayUl {
+    display: inline-block;
+    position: relative;
+    border-bottom: 3px solid rgb(0, 81, 255);
+    left: 20px;
+  }
+  nav .displayUl .myTop {
+    transform: rotateZ(-90deg);
+    margin-bottom: 10px;
+  }
+  nav .two_list_in_ul {
+    margin-left: -20px;
+    padding-left: 20px;
+    top: 0;
+    border: 0;
+  }
+}
+nav .photores {
+  max-width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  nav img {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
